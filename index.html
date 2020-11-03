@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="/favicon(4).ico" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css">
+  <title>Todo List</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="text-center text-light my-4">
+      <h1 class="mb-4">Coding Todo List</h1>
+      <form class="search">
+        <input class="form-control m-auto" type="text" name="search" placeholder="search todos" />
+      </form>
+    </header>
+
+    <ul class="list-group todos mx-auto text-light">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>Focus on Asynchronous JavaScript</span>
+        <i class="far fa-trash-alt delete"></i>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>Look into Bootstrap or Materialize</span>
+        <i class="far fa-trash-alt delete"></i>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span>Watch videos on the 'this' keyword</span>
+        <i class="far fa-trash-alt delete"></i>
+      </li>
+    </ul>
+
+    <form class="add text-center my-3">
+      <label class="text-light">Add a new todo...</label>
+      <input class="form-control m-auto" type="text" name="add" />
+    </form>
+
+    <div class="quote-container" align="center">
+
+      <div id="quote-box" class="quote-box mt-2">
+        <p class="quote mt-1">If Internet Explorer is brave enough to ask to be your default browser, You are brave
+          enough to ask that girl out</p>
+        <p class="source">Anonymous, <span class="citation">Twitter, </span><span class="year">2020</span></p>
+      </div>
+      <button id="load-quote" class="load-quote btn btn-dark btn-sm mb-1">More Inspiration</button>
+    </div>
+  </div>
+  </header>
+
+
+  <script src="app.js"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>
